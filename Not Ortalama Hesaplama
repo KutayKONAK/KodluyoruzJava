@@ -28,7 +28,7 @@ public class Main {
         double toplam= Matematik+Tarih+Turkce+Muzik+Kimya+Fizik;
         double ortalama=toplam/6;
         System.out.println("Derslerinizin orlaması: " +ortalama);
-        boolean sonuc = 50 < ortalama;
+        boolean sonuc = 60 < ortalama;
         String str= sonuc ? "Geçtiniz" : "Kaldınız" ;
         System.out.println(str);
 
