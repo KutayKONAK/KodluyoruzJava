@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int armut,elma,domates,muz,patlican;
+        double total,elmaFiyat,armutFiyat,domatesFiyat,muzFiyat,patlicanFiyat;
+        elmaFiyat=3.67;
+        armutFiyat=2.14;
+        domatesFiyat=1.11;
+        muzFiyat=0.95;
+        patlicanFiyat=5.0;
+
+        //Kullanıcıdan verileri alma
+        Scanner input = new Scanner(System.in);
+        System.out.print("Aldığınız Armut Kilosu: ");
+        armut=input.nextInt();
+
+        Scanner inpu = new Scanner(System.in);
+        System.out.print("Aldığınız Elma Kilosu: ");
+        elma=inpu.nextInt();
+
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Aldığınız Domates Kilosu: ");
+        domates=inp.nextInt();
+
+        Scanner inputt = new Scanner(System.in);
+        System.out.print("Aldığınız Muz Kilosu: ");
+        muz=inputt.nextInt();
+
+        Scanner inpuut = new Scanner(System.in);
+        System.out.print("Aldığınız Patlıcan Kilosu: ");
+        patlican=inpuut.nextInt();
+        total=((elma*elmaFiyat)+(armut*armutFiyat)+(muz*muzFiyat)+(domates*domatesFiyat)+(patlican*patlicanFiyat));
+        System.out.print("Toplam Tutar: " + total);
+    }
+}
