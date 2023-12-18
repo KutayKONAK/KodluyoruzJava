@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int kilo;
+        double boy,index;
+
+
+
+        //Kullanıcıdan verileri alma
+        Scanner input = new Scanner(System.in);
+        System.out.print("Boyunuzu metre cinsinden giriniz ");
+        boy=input.nextDouble();
+        Scanner giris = new Scanner(System.in);
+        System.out.print("kilonuzu giriniz: ");
+        kilo=giris.nextInt();
+
+        index=(kilo/(boy*boy));
+
+        System.out.print("Vücut kitle indeksiniz: " + index);
+    }
+}
