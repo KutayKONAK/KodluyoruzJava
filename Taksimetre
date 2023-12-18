@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int acilis,min,a;
+        double km,total,KmUcreti;
+        acilis=10;
+        min=20;
+        KmUcreti=2.20;
+
+
+        //Kullanıcıdan verileri alma
+        Scanner input = new Scanner(System.in);
+        System.out.print("Gidilecek mesafeyi giriniz: ");
+        a = input.nextInt();
+        km=(KmUcreti*a) ;
+        total=km+acilis;
+        total=(total<20) ? 20 : total;
+
+        System.out.print("Ücret: " + total);
+    }
+}
