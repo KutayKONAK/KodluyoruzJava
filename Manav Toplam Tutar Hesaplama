@@ -15,21 +15,22 @@ public class Main {
         System.out.print("Aldığınız Armut Kilosu: ");
         armut=input.nextInt();
 
-        Scanner inpu = new Scanner(System.in);
+    
         System.out.print("Aldığınız Elma Kilosu: ");
-        elma=inpu.nextInt();
+        elma=input.nextInt();
 
-        Scanner inp = new Scanner(System.in);
+       
         System.out.print("Aldığınız Domates Kilosu: ");
-        domates=inp.nextInt();
+        domates=input.nextInt();
 
-        Scanner inputt = new Scanner(System.in);
+       
         System.out.print("Aldığınız Muz Kilosu: ");
-        muz=inputt.nextInt();
+        muz=input.nextInt();
 
-        Scanner inpuut = new Scanner(System.in);
+       
         System.out.print("Aldığınız Patlıcan Kilosu: ");
-        patlican=inpuut.nextInt();
+        patlican=input.nextInt();
+       
         total=((elma*elmaFiyat)+(armut*armutFiyat)+(muz*muzFiyat)+(domates*domatesFiyat)+(patlican*patlicanFiyat));
         System.out.print("Toplam Tutar: " + total);
     }
