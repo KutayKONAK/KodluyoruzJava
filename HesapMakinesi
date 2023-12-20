@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int num1,num2,select;
+        double result;
+
+        //Kullanıcıdan verileri alma
+        Scanner input = new Scanner(System.in);
+        System.out.print("İşlem yapmak isteğiniz 1. sayıyı giriniz: ");
+        num1=input.nextInt();
+
+        System.out.print("İşlem yapmak istediğiniz 2. sayıyı giriniz: ");
+        num2=input.nextInt();
+
+        System.out.print("Toplama için 1'e \nÇıkarma için 2'ye \nÇarpma için 3'e \nBölme için 4'e \nTıklayınız: ");
+        select=input.nextInt();
+
+        switch (select){
+            case 1:
+                result=num1+num2;
+                System.out.print("Sonuc: " +result);
+                break;
+            case 2:
+                result=num1-num2;
+                System.out.print("Sonuc: " +result);
+                break;
+            case 3:
+                result=num1*num2;
+                System.out.print("Sonuc= " +result);
+                break;
+            case 4:
+                result=num1/num2;
+                System.out.print("Sonuc= " +result);
+                break;
+            default:
+                System.out.print("Lütfen 1 2 3 veya 4 numaralı işlemleri seçiniz");
+        }
+    }
+}
