@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int reset;
+        String ID,password,NewPassword;
+
+        Scanner inp = new Scanner(System.in);
+
+        System.out.print("Kullanıcı Adınız:  ");
+        ID=inp.nextLine();
+
+        System.out.print("Şifrenizi Giriniz:  ");
+        password=inp.nextLine();
+
+        if (ID.equals("patika") && password.equals("java123")){
+            System.out.println("Sisteme başarılı bir şekilde giriş yapıldı");
+        }
+        else {
+            System.out.println("Yanlış şifre vaya parola girdiniz!\nŞifrenizi sıfırlamak istermisiniz\nEvet için 1'\nHayır için 2'yi tuşlayınız ");
+            reset = inp.nextInt();
+            if (reset==1) {
+                Scanner input = new Scanner(System.in);
+                System.out.print("Yeni bir şifre giriniz! ");
+                NewPassword = input.nextLine();
+                if (NewPassword.equals("java123")) {
+                    System.out.print("Lütfen eski şifrenizden farklı bir şifre giriniz: ");
+                }
+                else {
+                    password=NewPassword;
+                    System.out.println("Şifreniz başarılı bir şekilde değiştirildi. ");
+                    System.out.println("Yeni şifreniz: " + password);
+                }
+            }
+            else if (reset==2) {
+                System.out.print("İşleminiz iptal edilmiştir ");
+            }
+            else {
+                    System.out.print("Lütfen sadece 1'i veya 2'yi tuşlayınız : ");
+            }
+        }
+    }
+}
