@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+class Main {
+    static Scanner input = new Scanner(System.in);
+    public static void main(String[] args) {
+        int k;
+
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Sınır Değeri Giriniz : ");
+        k = scan.nextInt();
+
+        System.out.print("Dördün Kuvvetleri :  ");
+
+        for(int i=1; i<=k;i*=4){
+            System.out.print(i+",");
+        }
+        System.out.print( "\nBeşin Kuvvetleri :  ");
+
+        for(int j=1; j<=k;j*=5){
+            System.out.print(j+",");
+        }
+
+    }
+}
