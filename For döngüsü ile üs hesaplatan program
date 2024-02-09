@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int k,n;
+        int result=1;
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Lütfen üssü alınıcak sayıyı giriniz : ");
+        n=input.nextInt();
+        System.out.print("Üs miktarını giriniz : ");
+        k=input.nextInt();
+        if (k==0){
+            result=1;
+        }
+        else {
+            for (int i=1;i<=k;i++){
+                result *=n;
+            }
+        }
+        System.out.println("Sonuç : "+result);
+    }
+}
